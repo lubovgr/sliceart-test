@@ -1,0 +1,55 @@
+.about {
+  padding: 30px 0 15px;
+  position: relative;
+  z-index: 2;
+  &:before {
+    background: #ececec url(../img/bg-line3.png) repeat-x 0 0;
+    content: '';
+    height: 400px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+  @include respond-from(sm) {
+    padding: 50px 0 20px;
+  }
+  @include respond-from(md) {
+    padding: 70px 0 25px;
+  }
+}
+.about__title {
+  color: #e1524b;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  @include respond-from(xs) {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  @include respond-from(sm) {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  @include respond-from(md) {
+    font-size: 40px;
+  }
+}
+.about__description {
+  line-height: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+  @include respond-from(xs) {
+    line-height: 20px;
+    margin-bottom: 25px;
+  }
+  @include respond-from(sm) {
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
+  @include respond-from(md) {
+    line-height: 28px;
+    margin-bottom: 60px;
+  }
+}

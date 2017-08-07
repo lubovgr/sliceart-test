@@ -1,0 +1,13 @@
+mixin services-template()
+  script(type="text/template")#services-template
+    .row
+      <% for (var i = 0; i < services.length; i++) { %>
+        .col-xs-12.col-sm-6.col-md-3
+          .service
+            .service__content
+              .service__icon
+                | <i class="fa fa-<%= services[i].icon %>"></i>
+              .service__title <%= services[i].title %>
+              .service__text <%= services[i].text %>
+            a(href="#").btn.btn-primary.service__button read more
+      <% } %>

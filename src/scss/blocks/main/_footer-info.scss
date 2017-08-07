@@ -1,0 +1,26 @@
+.footer-info {
+  background-color: #6ab3ac;
+  padding: 14px 0;
+}
+.footer-copyright {
+  color: $text-on-base-color;
+  font-size: 12px;
+  line-height: 22px;
+}
+.social {
+  text-align: right;
+  i {
+    color: $text-on-base-color;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 10px;
+    @include respond-from(xs) {
+      font-size: 19px;
+      margin-left: 15px;
+    }
+    @include respond-from(sm) {
+      font-size: 22px;
+      margin-left: 20px;
+    }
+  }
+}

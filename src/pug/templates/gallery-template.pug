@@ -1,0 +1,14 @@
+mixin gallery-template()
+  script(type="text/template")#gallery-template
+    .main-slider__container.swiper-container
+      .main-slider__wrapper.swiper-wrapper
+        <% for (var i = 0; i < gallery.length; i++) { %>
+          .main-slider__slide.swiper-slide
+            .main-slider__heading <%= gallery[i].title %>
+            .main-slider__text <%= gallery[i].text %>
+        <% } %>
+    .swiper__button-prev.btn.btn-danger
+      i.fa.fa-angle-double-left
+    .swiper__button-next.btn.btn-danger
+      i.fa.fa-angle-double-right
+    .swiper-pagination

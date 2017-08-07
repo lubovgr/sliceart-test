@@ -1,0 +1,39 @@
+mixin navbar()  
+  .navbar-header
+    .nav-toggle-btn(data-toggle='collapse', data-target="#navbar")
+      include ../nav-toggle
+    #navbar.navbar-collapse.collapse
+      ul.navigation
+        li.navigation__item
+          a.navigation__link.active(href="index.html")
+            span HOME
+        li.navigation__item
+          a.navigation__link(href="#")
+            span ABOUT
+        li.navigation__item
+          a.navigation__link(href="#")
+            span SERVICES
+        li.navigation__item
+          a.navigation__link.navigation__link--toggle.wrap-icon(href="#", data-toggle='dropdown')
+            i.fa.fa-angle-down.navigation__icon
+            span PORTFOLIO
+          .navigation-drop-menu
+            .navigation-drop-menu__item.wrap-icon
+              i.fa.fa-angle-right.navigation-drop-menu__icon
+              span.navigation-drop-menu__text Portfolio 2 column page
+            .navigation-drop-menu__item.wrap-icon
+              i.fa.fa-angle-right.navigation-drop-menu__icon
+              span.navigation-drop-menu__text Portfolio 2 column page
+            .navigation-drop-menu__item.wrap-icon
+              i.fa.fa-angle-right.navigation-drop-menu__icon
+              span.navigation-drop-menu__text Portfolio 2 column page
+        li.navigation__item
+          a.navigation__link(href="#")
+            span BLOG
+        li.navigation__item
+          a.navigation__link(href="#")
+            span FEATURES
+        li.navigation__item
+          a.navigation__link(href="#")
+            span CONTACTS
+          

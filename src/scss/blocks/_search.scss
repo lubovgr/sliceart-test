@@ -1,0 +1,17 @@
+.search {
+  cursor: pointer;
+  padding: 7px;
+  @include respond-to(sm) {
+    position: absolute;
+    right: 0; 
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @include respond-from(sm) {
+    float: right;
+  }
+}
+.search__icon {
+  color: $text-on-base-color;
+  font-size: 16px;
+}

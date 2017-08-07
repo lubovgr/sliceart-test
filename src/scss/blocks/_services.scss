@@ -1,0 +1,93 @@
+.services {
+  padding: 4.3% 0 3%;
+}
+.service {
+  margin-bottom: 15px;
+  text-align: center;
+  &:hover {
+    .service__icon {color: #e2534b;}
+    .service__content {background-color: $text-on-base-color;}
+    .service__button {
+      background-color: $secondary;
+      border-color: #e2534b;
+    }
+  }
+}
+.service__icon {
+  color: $base;
+  font-size: 36px;
+  margin-bottom: 5px;
+  transition: color .3s;
+  @include respond-from(sm) {
+    font-size: 44px;
+    margin-bottom: 10px;
+  }
+  @include respond-from(md) {
+    font-size: 52px;
+    margin-bottom: 15px;
+    .fa-thumbs-o-up {font-size: 57px;}
+    .fa-key {font-size: 55px;}
+    .fa-flag {font-size: 53px;}
+    .fa-flask {font-size: 52px;}
+  }
+}
+.service__content {
+  background-color: #f8f8f8;
+  border-bottom: 4px solid #e5e6e6;
+  border-radius: 4px;
+  min-height: 250px;
+  padding: 25px 15px;
+  transition: background .3s;
+  @include respond-from(sm) {
+    min-height: 280px;
+    padding: 35px 15px 32px;
+  }
+  @include respond-from(md) {
+    min-height: 314px;
+    padding: 48px 15px 32px;
+  }
+}
+.service__title {
+  color: $additional;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  @include respond-from(sm) {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  @include respond-from(md) {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+}
+.services__item-text {
+  line-height: 18px;
+  @include respond-from(sm) {
+    line-height: 21px;
+  }
+}
+.service__button {
+  border-radius: 4px;
+  color: $text-on-base-color;
+  display: block;
+  font-size: 13px;
+  line-height: 15px;
+  margin: -25px auto 0;
+  padding: 10px 5px;
+  text-transform: lowercase;
+  width: 160px;
+  @include respond-from(sm) {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 12px 10px;
+    width: 170px;
+    margin: -31px auto 0;
+  }
+  @include respond-from(lg) {
+    padding: 17px 20px;
+    width: 200px;
+  }
+}

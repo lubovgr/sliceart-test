@@ -1,0 +1,8 @@
+.header {
+  background: $base url(../img/bg-line.png) repeat-x left bottom;
+  padding: 10px 0;
+  position: relative;
+  @include respond-from(sm) {
+    padding: 25px 0 22px;
+  }
+}

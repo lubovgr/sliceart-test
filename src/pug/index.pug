@@ -1,0 +1,20 @@
+extends layouts/default
+include partials/introduction
+include partials/services
+include partials/about
+
+block page
+  - var page = "index";
+block title
+  title Test
+
+block content
+  .container-fluid
+    +introduction()
+    +services()
+  +about()
+  +clients()
+  
+ 
+  
+  

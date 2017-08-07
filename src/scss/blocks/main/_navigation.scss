@@ -1,0 +1,148 @@
+.navbar-header {
+  margin-right: 0;
+  @include respond-from(sm) {
+    float: right;
+    margin-right: 10px;
+  }
+  @include respond-from(md) {
+    margin-right: 26px;
+  }
+}
+
+.nav-toggle-btn {
+  display: none;
+  @include respond-to(sm) {
+   cursor: pointer;
+   display: block;
+   left: 0; 
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+  }
+}
+.navbar-collapse {
+  @include respond-to(sm) {
+    background: $base;
+    left: 0;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 999; 
+  }
+  @include respond-from(sm) {
+    padding: 0;
+    &.collapse {
+      display: block !important;
+    }
+  }
+}
+.navigation {
+  @include respond-to(sm) {
+    padding: 15px 0;
+  }
+}
+.navigation__item {
+  position: relative;
+  @include respond-from(sm) {
+    float: left;
+    margin-right: 4px;
+  }
+  @include respond-from(md) {
+    margin-right: 10px;
+  }
+  @include respond-from(lg) {
+    margin-right: 14px;
+  }
+  
+  &:hover, &:focus, &.open {
+    .navigation__link {
+      background-color: $secondary;
+      border-bottom: 3px solid #e2534b;
+      color: $text-on-base-color;
+    }
+  }
+  &.open {
+    .navigation-drop-menu {display: block;}
+  }
+}
+.navigation__link {
+  background-color: transparent;
+  border-bottom: 3px solid transparent;
+  border-radius: 4px;
+  color: $text-on-base-color;
+  display: block;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 14px;
+  padding: 8px;
+  transition: background .5s, border .5s;
+  @include respond-from(md) {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+  @include respond-from(lg) {
+    padding: 8px 16px;
+  }
+  &:focus, &:active {
+    color: $text-on-base-color;
+  }
+  &.active {
+    background-color: #62a29e;
+    border-bottom: 3px solid #528b86;
+  }
+
+  &--toggle .navigation__icon {
+    font-size: 12px;
+    margin-right: 5px;
+  }
+}
+
+
+.navigation-drop-menu {
+  background-color: #e2534b;
+  border-radius: 5px;
+  display: none;
+  padding: 5px;
+  width: 200px;
+  z-index: 100;
+  &:before {
+    border-bottom: 6px solid #e2534b;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    content: '';
+    left: 12px;
+    position: absolute;
+    top: -6px;
+  }
+  @include respond-from(sm) {
+    left: 0;
+    position: absolute;
+    top: 45px;
+  }
+  @include respond-to(sm) {
+    margin: 10px 0;
+    position: relative;
+    width: 100%;
+  }
+}
+.navigation-drop-menu__item {
+  background-color: $secondary;
+  border-radius: 3px;
+  color: $text-on-base-color;
+  cursor: pointer;
+  margin-bottom: 5px;
+  padding: 8px 12px;
+  transition: background .3s;
+  &:hover {
+    background-color: $base;
+  }
+  &:last-child {margin-bottom: 0;}
+}
+.navigation-drop-menu__text {
+  font-size: 13px;
+  line-height: 14px;
+}
+.navigation-drop-menu__icon {
+  font-size: 11px;
+  margin-right: 9px;
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "title": "SUSPENDISSE",
+    "text": "Quisque id tellus quis risus vehicula vehicula ut turpis. In eros nulla, placerat vitae at, vehicula ut nunc.",
+    "icon": "thumbs-o-up"
+  },
+  {
+    "title": "MAECENAS",
+    "text": "Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo.",
+    "icon": "key"
+  },
+  {
+    "title": "ALIQUAM",
+    "text": "Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor non.",
+    "icon": "flag"
+  },
+  {
+    "title": "HABITASSE",
+    "text": "Astehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor non.",
+    "icon": "flask"
+  }
+]

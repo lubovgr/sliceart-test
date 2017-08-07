@@ -1,0 +1,163 @@
+.main-slider {
+  background-color: $additional;
+  margin-bottom: 26px;
+  position: relative;
+  @include respond-from(sm) {
+    margin-bottom: 30px;
+  }
+  @include respond-from(md) {
+    margin-bottom: 50px;
+  }
+  .swiper__button-prev,
+  .swiper__button-next {
+    border-bottom: 3px solid #e2534b;
+    cursor: pointer;
+    line-height: 19px;
+    padding: 5px 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 32px;
+    z-index: 101;
+    i {
+      color: $text-on-base-color;
+      font-size: 20px;
+      line-height: 27px;
+      @include respond-from(sm) {
+        font-size: 25px;
+      }
+      @include respond-from(md) {
+        font-size: 28px;
+      }
+    }
+    &:hover {
+      background: #e2534b;
+    }
+    @include respond-from(md) {
+      padding: 10px 0;
+      width: 40px;
+    }
+    @include respond-from(md) {
+      padding: 15px 0;
+      width: 50px;
+    }
+  }
+  .swiper__button-prev {
+    border-radius: 0 4px 4px 0;
+    left: 0px;
+  }
+  .swiper__button-next {
+    border-radius: 4px 0 0 4px;
+    right: 0px;
+  }
+}
+.main-slider__slide {
+  padding: 8.5% 0 10.9%;
+  text-align: center;
+}
+
+.swiper-pagination-fraction, .swiper-pagination-custom, 
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: inherit;
+  top: 100%;
+}
+.main-slider__heading {
+  background: #e2534b;
+  border-radius: 4px;
+  color: $text-on-base-color;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 32px; 
+  margin: 0 auto 10px;
+  padding: 0 5px;
+  text-transform: uppercase;
+  width: 200px;
+  @include respond-from(sm) {
+    font-size: 36px;
+    line-height: 36px; 
+    padding: 0 6px;
+    width: 260px;
+  }
+  @include respond-from(md) {
+    font-size: 42px;
+    line-height: 42px; 
+    padding: 0 8px;
+    width: 300px;
+  }
+  @include respond-from(lg) {
+    font-size: 50px;
+    line-height: 50px; 
+    padding: 0 11px;
+    width: 346px;
+  }
+}
+.main-slider__text {
+  background: #3f4646;
+  border-radius: 4px;
+  color: $text-on-base-color;
+  font-size: 13px;
+  line-height: 16px; 
+  margin: 0 auto;
+  padding: 4px 5px;
+  width: 230px;
+  @include respond-from(xs) {
+    font-size: 14px;
+    line-height: 18px; 
+    padding: 4px 10px;
+    width: 320px;
+  }
+  @include respond-from(sm) {
+    font-size: 15px;
+    line-height: 22px; 
+    padding: 6px 15px;
+    width: 400px;
+  }
+  @include respond-from(md) {
+    font-size: 16px;
+    line-height: 24px; 
+    padding: 8px 25px;
+    width: 450px;
+  }
+  @include respond-from(lg) {
+    font-size: 16px;
+    line-height: 26px; 
+    padding: 9px 37px;
+    width: 470px;
+  }
+}
+.swiper-pagination {
+  font-size: 0;
+  left: 50%;
+  line-height: 1;
+  padding: 11px 0;
+  transform: translateX(-50%);
+  @include respond-from(sm) {
+    padding: 13px 0;
+  }
+  @include respond-from(md) {
+    padding: 21px 0 24px;
+  }
+}
+.swiper-pagination-bullets 
+.swiper-pagination-bullet {
+  background-color: #b0b8b9;
+  border-radius: 0;
+  height: 3px;
+  margin-right: 10px;
+  opacity: 1;
+  transition: background 0.3s;
+  width: 30px;
+  &:hover { background-color: #e2534b; }
+  &:last-child {margin-right: 0;}
+  @include respond-from(sm) {
+    height: 4px;
+    width: 40px;
+  }
+  @include respond-from(md) {
+    width: 60px;
+  }
+}
+.swiper-pagination-bullets 
+.swiper-pagination-bullet-active {
+  background-color: #e2534b;
+}

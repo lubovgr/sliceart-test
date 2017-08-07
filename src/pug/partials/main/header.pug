@@ -1,0 +1,11 @@
+include logo
+include navigation
+include ../search
+
+mixin header()
+  header.header.clearfix
+    .container-fluid
+      .header-inner
+        +logo()
+        +search()
+        +navbar()

@@ -1,0 +1,74 @@
+.introduction {
+  background-color: #ececec;
+  border-radius: 4px;
+  padding: 20px 10px;
+  @include respond-from(md) {
+    padding: 24px 0 22px;
+  }
+}
+.introduction-info {
+  margin-bottom: 15px;
+  padding: 0 15px;
+  @include respond-from(sm) {
+    margin-bottom: 0;
+    padding: 0 0 0 33px;
+  }
+}
+.introduction-info__title {
+  color: $additional;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 22px;
+  margin-bottom: 5px;
+  text-align: center;
+  @include respond-from(sm) {
+    text-align: left;
+    font-size: 25px;
+    line-height: 26px;
+  }
+  @include respond-from(md) {
+    text-align: left;
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+.introduction-info__text {
+  color: $text-color;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: -0.13px;
+  @include respond-from(sm) {
+    text-align: left;
+  }
+}
+.view-more-wrap {
+  margin: 0 auto;
+  max-width: 160px;
+  @include respond-from(sm) {
+    max-width: 175px;
+  }
+  @include respond-from(md) {
+    max-width: 200px;
+  }
+}
+.view-more {
+  display: block;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 16px;
+  padding: 8px 5px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background .3s;
+  @include respond-from(sm) {
+    font-size: 18px;
+    line-height: 18px;
+    padding: 10px 5px;
+  }
+  @include respond-from(md) {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 13px 5px;
+  }
+}

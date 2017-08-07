@@ -1,0 +1,10 @@
+.logo {
+  margin: 0 auto;
+  max-width: 170px;
+  padding: 6px 0;
+  @include respond-from(sm) {
+    float: left;
+    max-width: initial;
+    padding: 3px 0 9px 8px;
+  }
+}

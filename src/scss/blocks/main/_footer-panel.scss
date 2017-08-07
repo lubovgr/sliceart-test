@@ -1,0 +1,140 @@
+.footer-panel {
+  padding: 15px 0;
+  @include respond-from(sm) {
+    padding: 2.37% 0 24px;
+  }
+  .logo {
+    float: none;
+    margin-bottom: 10px;
+
+    @include respond-from(sm) {
+      margin-bottom: 15px;
+    }
+    @include respond-from(md) {
+      margin-bottom: 17px;
+    }
+  }
+}
+.footer-panel__text {
+  color: $text-on-base-color;
+  line-height: 18px;
+  margin-bottom: 15px;
+  @include respond-from(sm) {
+    line-height: 20px;
+  }
+  @include respond-from(md) {
+    line-height: 23px;
+    margin-bottom: 25px;
+  }
+}
+.footer-panel__info {
+  color: $text-on-base-color;
+  line-height: 20px;
+  margin-bottom: 11px;
+}
+.footer-panel__info-prop {
+  display: inline-block;
+  padding-left: 5px;
+  width: 65px;
+}
+.footer-panel__info-det {
+  font-weight: 600;
+  font-style: italic;
+  font-size: 18px;
+  @include respond-from(md) {
+    font-size: 20px;
+  }
+}
+.footer-nav {
+  @include respond-to(md) {
+    margin-bottom: 15px;
+  }
+}
+.footer-nav__title {
+  color: #3b6360;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 10px;
+  @include respond-from(sm) {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 15px;
+  }
+  @include respond-from(md) {
+    font-size: 20px;
+    line-height: 31px;
+    margin-bottom: 20px;
+  }
+}
+.footer-nav__item {
+  line-height: 16px;
+  margin-bottom: 4px;
+  @include respond-from(md) {
+    line-height: 19px;
+    padding-left: 25px;
+  }
+  a {
+    color: $text-on-base-color;
+    font-size: 13px;
+    &:hover {text-decoration: underline;}
+  }
+  i {
+    color: $text-on-base-color;
+    font-size: 11px;
+    margin-right: 10px;
+  }
+}
+.footer-blog__item {margin-bottom: 20px;}
+.footer-blog__item-preview {
+  background-color: #5e9f9a;
+  border-radius: 4px;
+  float: left;
+  height: 50px;
+  margin-right: 10px;
+  position: relative;
+  width: 50px;
+  img {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @include respond-from(sm) {
+    height: 60px;
+    margin-right: 15px;
+    width: 60px;
+  }
+  @include respond-from(md) {
+    height: 70px;
+    margin-right: 18px;
+    width: 70px;
+  }
+}
+.footer-blog__item-info {overflow: hidden;}
+.footer-blog__title {
+  color: $text-on-base-color;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 10px;
+  span {font-weight: 700;}
+  @include respond-from(sm) {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+  @include respond-from(md) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+}
+.footer-blog__item-text {
+  color: $text-on-base-color;
+  line-height: 19px;
+}
+.footer-blog__item-date {
+  color: #3b6360;
+  line-height: 19px;
+}

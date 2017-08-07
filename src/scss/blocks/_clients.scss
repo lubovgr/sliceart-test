@@ -1,0 +1,138 @@
+.clients {
+  padding: 10px 0 20px;
+  @include respond-from(sm) {
+    padding: 15px 0 35px;
+  }
+  @include respond-from(md) {
+    padding: 20px 0 50px;
+  }
+}
+.clients__heading {
+  line-height: 16px;
+  margin-bottom: 20px;
+  margin-right: 80px;
+  overflow: hidden;
+  padding: 6px 0;
+  @include respond-from(sm) {
+    margin-bottom: 30px;
+    margin-right: 100px;
+    padding: 10px 0;
+  }
+  @include respond-from(md) {
+   margin-bottom: 40px;
+   margin-right: 119px;
+   padding: 12px 0;
+  }
+}
+.clients__title {
+  color: $additional;
+  float: left;
+  font-weight: 800;
+  font-size: 13px;
+  max-width: 90%;
+  overflow: visible;
+  position: relative;
+  @include respond-from(sm) {
+    font-size: 14px;
+  }
+  @include respond-from(md) {
+    font-size: 16px;
+  }
+  &:after, &:before {
+    content: '';
+    left: 111%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+  }
+  &:after {
+    background-color: #e1e2e2;
+    height: 1px;
+    width: 9999px;
+  }
+  &:before {
+    background-color: #e1e2e2;
+    border-radius: 50%;
+    height: 7px;
+    width: 7px;
+  }
+}
+.clients__item {
+  background-color: $text-on-base-color;
+  border-radius: 4px;
+  height: 90px;
+  overflow: hidden;
+  img {
+    height: auto;
+    left: 50%;
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+  }
+}
+.clients__slider {
+  position: relative;
+  .swiper__button-prev,
+  .swiper__button-next {
+    border-radius: 4px;
+    cursor: pointer;
+    height: 25px;
+    line-height: 16px;
+    padding: 4px 0;
+    position: absolute;
+    right: 0;
+    top: -45px;
+    width: 25px;
+    z-index: 101;
+    i {
+      color: $text-on-base-color;
+      font-size: 16px;
+      line-height: 16px;
+      @include respond-from(xs) {
+        font-size: 18px;
+        line-height: 18px;
+      }
+      @include respond-from(sm) {
+        font-size: 24px;
+        line-height: 20px;
+      }
+      @include respond-from(md) {
+        font-size: 29px;
+      }
+    }
+    &:hover {
+      background-color: #e2534b;
+      border-color: #e2534b;
+    }
+    @include respond-from(xs) {
+      height: 30px;
+      top: -49px;
+      width: 30px;
+    }
+    @include respond-from(sm) {
+      height: 35px;
+      padding: 7px 0;
+      top: -66px;
+      width: 35px;
+    }
+    @include respond-from(md) {
+      height: 40px;
+      padding: 10px 0;
+      top: -79px;
+      width: 40px;
+    }
+  }
+  .swiper__button-prev {
+    right: 40px;
+    @include respond-from(sm) {
+      right: 50px;
+    }
+    @include respond-from(md) {
+      right: 60px;
+    }
+  }
+}

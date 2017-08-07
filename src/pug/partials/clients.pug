@@ -1,0 +1,16 @@
+mixin clients()
+  .clients
+    .container-fluid
+      .clients__heading.clearfix
+        h3.clients__title Our Happy Clients
+      .clients__slider
+        .clients__slider-container.swiper-container
+          .clients__slider-wrapper.swiper-wrapper
+            -for(i=1;i<=12;i++)
+              .clients__slide.swiper-slide
+                .clients__item
+                  img(src="img/temp/jquery.png", alt="")
+        .swiper__button-prev.btn.btn-default
+          i.fa.fa-angle-left
+        .swiper__button-next.btn.btn-default
+          i.fa.fa-angle-right
